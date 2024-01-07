@@ -19,4 +19,4 @@ social: false  # includes social icons at the bottom of the page
 
 I am a second-year Ph.D. student in the [Cryptography group](https://crypto.cs.washington.edu/) at the University of Washington, advised by Prof. [Stefano Tessaro](https://homes.cs.washington.edu/~tessaro/). My research interest lies broadly in cryptography, specifically advanced signature schemes such as blind signatures and multisignatures. 
 
-Previously, I completed my Bachelor's degree at Brown University, where I was fortunate to work with Prof. [Anna Lysyanskaya](https://cs.brown.edu/people/alysyans/).
+Previously, I received my Bachelor's degree from Brown University, where I was fortunate to work with Prof. [Anna Lysyanskaya](https://cs.brown.edu/people/alysyans/).
