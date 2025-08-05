@@ -1,34 +1,31 @@
-"Adams":
-  - firstname: ["Edwin", "E.", "E. P.", "Edwin Plimpton"]
-    url: https://en.wikipedia.org/wiki/Edwin_Plimpton_Adams
+"Tessaro":
+  - firstname: ["Stefano", "Stefano Tessaro"]
+    url: https://homes.cs.washington.edu/~tessaro/
 
-"Podolsky":
-  - firstname: ["Boris", "B.", "B. Y.", "Boris Yakovlevich"]
-    url: https://en.wikipedia.org/wiki/Boris_Podolsky
+"Zhu":
+  - firstname: ["Chenzhi", "Chenzhi Zhu"]
+    url: https://homes.cs.washington.edu/~zhucz20/
 
-"Rosen":
-  - firstname: ["Nathan", "N."]
-    url: https://en.wikipedia.org/wiki/Nathan_Rosen
+"Harding":
+  - firstname: ["Franklin", "Franklin Harding"]
+    url: https://harding.coffee/
 
-"Bach": 
-  - firstname: ["Johann Sebastian", "J. S."]
-    url: https://en.wikipedia.org/wiki/Johann_Sebastian_Bach
+"Lysyanskaya": 
+  - firstname: ["Anna Lysyanskaya", "Anna"]
+    url: https://cs.brown.edu/~alysyans/
 
-  - firstname: ["Carl Philipp Emanuel", "C. P. E."]
-    url: https://en.wikipedia.org/wiki/Carl_Philipp_Emanuel_Bach
+"Hanzlik":
+  - firstname: ["Lucjan", "Lucjan Hanzlik"]
+    url: https://lucjanhanzlik.github.io/
 
-"Przibram":
-  - firstname: ["Karl"]
-    url: https://link.springer.com/article/10.1007/s00016-019-00242-z
+"Loss":
+  - firstname: ["Julian Loss", "Julian"]
+    url: https://www.julianloss.com/
 
-"Schrödinger":
-  - firstname: ["Erwin"]
-    url: https://en.wikipedia.org/wiki/Erwin_Schr%C3%B6dinger
+"Wagner":
+  - firstname: ["Benedikt Wagner", "Benedikt"]
+    url: https://benedikt-wagner.dev/
 
-"Lorentz":
-  - firstname: ["Hendrik Antoon"]
-    url: https://en.wikipedia.org/wiki/Hendrik_Lorentz
-
-"Planck":
-  - firstname: ["Max"]
-    url: https://en.wikipedia.org/wiki/Max_Planck
+"Döttling":
+  - firstname: ["Nico", "Nico Döttling"]
+    url: https://sites.google.com/site/nicodoettling/
