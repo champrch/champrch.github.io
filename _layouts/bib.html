@@ -32,7 +32,7 @@
         <!-- Entry bib key -->
         <div id="{{entry.key}}" class="{% if site.enable_publication_thumbnails %}col-sm-8{% else %}col-sm-10{% endif %}">
         <!-- Title -->
-        <div class="title"><a href="{{entry.url}}">{{entry.title}}</a></div>
+        <div class="title"><a href="{{entry.url}}"><b>{{entry.title}}</b></a></div>
         <!-- Author -->
         <div class="author">
         {% assign author_array_size = entry.author_array | size %}
@@ -113,13 +113,13 @@
         {% assign proceedings = "inproceedings,incollection" | split: ','%}
         {% assign thesis = "thesis,mastersthesis,phdthesis" | split: ','%}
         {% if entry.type == "article" -%}
-          {%- capture entrytype -%}<em>{{entry.journal}}</em>{%- endcapture -%}
+          {%- capture entrytype -%}{{entry.journal}} {%- endcapture -%}
         {%- elsif proceedings contains entry.type -%}
-          {%- capture entrytype -%}<em>{{entry.booktitle}}</em> {%- endcapture -%}
+          {%- capture entrytype -%}{{entry.booktitle}} {%- endcapture -%}
         {%- elsif thesis contains entry.type -%}
-          {%- capture entrytype -%}<em>{{entry.school}}</em> {%- endcapture -%}
+          {%- capture entrytype -%}{{entry.school}} {%- endcapture -%}
         {%- elsif entry.type == "preprint" -%}
-          {%- capture entrytype -%}<em>Preprint</em> {%- endcapture -%}
+          {%- capture entrytype -%}Preprint {%- endcapture -%}
         {%- else -%}
           {%- capture entrytype -%}{%- endcapture -%}
         {%- endif -%}
@@ -130,7 +130,7 @@
           {%- capture entryyear -%}{{ " " }}{{entry.year}}{%- endcapture -%}
         {%- endif -%}
         {% assign entrytype_text = entrytype | strip_html | strip %}
-        {%- capture periodical -%}{{ entrytype }}{%- if entrytype_text != "" and entryyear != "" -%}, {%- endif -%}{{ entrymonth }}{{ entryyear }}{%- endcapture -%}
+        {%- capture periodical -%}<b><strong>{{ entrytype }}{%- if entrytype_text != "" and entryyear != "" -%}, {%- endif -%}{{ entrymonth }}{{ entryyear }}</strong></b>{%- endcapture -%}
         <div class="periodical">
           {{ periodical | strip }}
         </div>
