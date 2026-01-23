@@ -277,6 +277,7 @@ scholar:
 
   source: /_bibliography/
   bibliography: papers.bib
+  talks: talks.bib
   bibliography_template: bib
   # Note: if you have latex math in your bibtex, the latex filter
   # preprocessing may conflict with MathJAX if the latter is enabled.
@@ -293,6 +294,7 @@ scholar:
   query: "@*"
   group_by: year
   group_order: descending
+
 
 # Display different badges withs stats for your publications
 enable_publication_badges:

@@ -32,7 +32,11 @@
         <!-- Entry bib key -->
         <div id="{{entry.key}}" class="{% if site.enable_publication_thumbnails %}col-sm-8{% else %}col-sm-10{% endif %}">
         <!-- Title -->
-        <div class="title"><a href="{{entry.url}}"><b>{{entry.title}}</b></a></div>
+        {%- if entry.url -%}
+          <div class="title"><a href="{{entry.url}}"><b>{{entry.title}}</b></a></div>
+        {%- else -%}
+          <div class="title"><b>{{entry.title}}</b></div>
+        {%- endif -%}
         <!-- Author -->
         <div class="author">
         {% assign author_array_size = entry.author_array | size %}
@@ -120,6 +124,8 @@
           {%- capture entrytype -%}{{entry.school}} {%- endcapture -%}
         {%- elsif entry.type == "preprint" -%}
           {%- capture entrytype -%}Preprint {%- endcapture -%}
+        {%- elsif entry.type == "misc" -%}
+          {%- capture entrytype -%}{{entry.location}} {%- endcapture -%}
         {%- else -%}
           {%- capture entrytype -%}{%- endcapture -%}
         {%- endif -%}
@@ -130,7 +136,11 @@
           {%- capture entryyear -%}{{ " " }}{{entry.year}}{%- endcapture -%}
         {%- endif -%}
         {% assign entrytype_text = entrytype | strip_html | strip %}
-        {%- capture periodical -%}<b><strong>{{ entrytype }}{%- if entrytype_text != "" and entryyear != "" -%}, {%- endif -%}{{ entrymonth }}{{ entryyear }}</strong></b>{%- endcapture -%}
+        {%- if entry.type == "misc" -%}
+          {%- capture periodical -%}{{ entrytype }}{%- if entrytype_text != "" and entryyear != "" -%}, {%- endif -%}{{ entrymonth }}{{ entryyear }}{%- endcapture -%}
+        {%- else -%}
+          {%- capture periodical -%}<b><strong>{{ entrytype }}{%- if entrytype_text != "" and entryyear != "" -%}, {%- endif -%}{{ entrymonth }}{{ entryyear }}</strong></b>{%- endcapture -%}
+        {%- endif -%}
         <div class="periodical">
           {{ periodical | strip }}
         </div>
